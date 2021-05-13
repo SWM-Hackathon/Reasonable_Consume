@@ -1,6 +1,8 @@
+const GU_DATA = require('./data/preprocess/json/GU_DATA.json')
+
 exports.getGuCode = async (req, res, next) => {
   try {
-      const items = []
+      const items = GU_DATA['DATA']
       res.send(items)
   }
   catch(error){
