@@ -11,8 +11,22 @@ function Intro() {
                     Who We are
                 </S.Title>
                 <S.Content>
-                    소비자가 개별적, 도덕적 신념을 가지고 인간, 사회, 환경에 대한 사회적 책임을 실천하는 소비행동
-                    입니다.
+                    안녕하세요!<br/>
+                </S.Content>
+                <S.Content>
+                    <S.TempDiv>저희는 소비자들의 착한 소비를 돕는 &nbsp;</S.TempDiv>
+                    <S.BoldContent>
+                        우리 소비가 착해졌어요&nbsp;
+                    </S.BoldContent>
+                    <S.TempDiv>팀입니다.<br/></S.TempDiv>
+                </S.Content>
+                <S.Content>
+                    착한 소비를 위해 착한업소, 착한가격에 대한 모든 것을 알려드립니다!<br/>
+                </S.Content>
+                <S.Content>
+                    <S.BoldContent>
+                    우리 동네 착한업소가 어디인지, 내가 지금 사는 물건이 착한가격인지, 저희 서비스에서 모두 확인해보세요!
+                    </S.BoldContent>
                 </S.Content>
             </S.TitleContainer>
             <S.TitleContainer>

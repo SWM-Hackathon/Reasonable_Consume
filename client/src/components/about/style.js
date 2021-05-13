@@ -20,6 +20,13 @@ export const Title = styled.div`
     margin-bottom: 20px;
 `;
 
+export const BoldContent = styled.span`
+    color: #6e849a;
+    font-weight: bold;
+`;
+
+export const TempDiv = styled.div``
+
 export const TeamContent = styled.div`
     font-size: 1.3em;
     color: gray;
