@@ -81,7 +81,7 @@
 ### About Us
 ![image](https://user-images.githubusercontent.com/82928126/118189552-e4a69980-b47c-11eb-8b5b-96cd641e6d2c.png)
 ### 착한 업소 정보 1
-![image](https://user-images.githubusercontent.com/82928126/118184255-1700c880-b476-11eb-8b90-44caf187d8a0.png)
+![image](https://user-images.githubusercontent.com/82928126/118193605-f4c17780-b482-11eb-91a4-977eeaf04406.png)
 ### 착한 업소 정보 2
 ![image](https://user-images.githubusercontent.com/82928126/118189840-4404a980-b47d-11eb-9d60-692275db3f21.png)
 ### 착한 물가 1
@@ -94,7 +94,7 @@
 ![image](https://user-images.githubusercontent.com/82928126/118190275-d907a280-b47d-11eb-98e9-e83d416a05fc.png)
 
 ## 👩‍👩‍👧‍👦Members
-|<img src="https://avatars.githubusercontent.com/u/31193997?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/60457112?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/70363646?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/82928126?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/14193000?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/43122459?v=4" width=300/>|
+|<img src="https://avatars.githubusercontent.com/u/31193997?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/60457112?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/70363646?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/37537248?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/14193000?v=4" width=300/>|<img src="https://avatars.githubusercontent.com/u/43122459?v=4" width=300/>|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |고동현|김동현|김장영|성인규|이중훈|허승우|
 | [@godonghyun](https://github.com/godonghyun) | [@dooking](https://github.com/dooking) | [@longshiine](https://github.com/longshiine) | [@cakenbake](https://github.com/cakenbake) | [@doublehoon](https://github.com/doublehoon) | [@1214sw](https://github.com/1214sw)
