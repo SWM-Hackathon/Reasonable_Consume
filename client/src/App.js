@@ -6,6 +6,7 @@ import ShopPage from './pages/ShopPage';
 import PricePage from './pages/PricePage';
 import IntroPage from './pages/IntroPage';
 import MarketPage from './pages/MarketPage';
+import AboutPage from './pages/AboutPage';
 import NavBar from './components/navbar';
 import Sidebar from './components/sidebar'
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/intro" component={IntroPage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/price" component={PricePage} />
+        <Route path="/about" component={AboutPage} />
         <Route path="/market/:marketCode" component={MarketPage} />
       </Switch>
       {toggle && <Sidebar toggle={toggle} toggleHandler={toggleHandler}/>}
@@ -40,6 +42,7 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    color : gray;
   }
   body, html {
     margin: 0;
