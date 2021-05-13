@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BiSearchAlt } from "react-icons/bi";
+import { BsFillCaretUpFill,BsFillCaretDownFill } from "react-icons/bs";
 import axios from 'axios';
 import * as S from './style'
 
@@ -11,7 +12,7 @@ const offset = {
 function Intro() {
     return (
         <S.PricePage>
-            <S.Banner />
+            {/* <S.Banner /> */}
             <Price />
         </S.PricePage>
     );
@@ -38,7 +39,7 @@ function Price(props) {
             <S.PriceListContainer>
             {
                 average.length === 0 ? null : (average.map((item, i) => (
-                    <FruitBox name={item.name} price={item.price} etc={item.etc} unit={item.unit} active='true' />
+                    <FruitBox name={item.name} price={item.price} etc={item.etc} unit={item.unit} plusMinus={item.plusMinus} active='true' />
                 )
                 ))
             }
@@ -55,7 +56,17 @@ function FruitBox(props) {
                     <S.FruitIcon style={{backgroundPositionY:offset[props.name]}}/>
                 </S.FruitInfoHolder>
                 <S.FruitName>{props.name}<S.FruitBar /></S.FruitName>
-                <S.FruitPrice>가격:{props.price}</S.FruitPrice>
+                <S.FruitPrice>가격 : {props.price} {
+                    props.plusMinus >= 0 ?
+                    <S.Plus>
+                        (<BsFillCaretUpFill/>&nbsp;{props.plusMinus})
+                    </S.Plus>
+                    : 
+                    <S.Minus>
+                        (<BsFillCaretDownFill/>&nbsp;{props.plusMinus})
+                    </S.Minus>
+                }
+                </S.FruitPrice>
             </tr>
             <tr>
                 <S.FruitUnit colSpan="2">단위:{props.unit}</S.FruitUnit>

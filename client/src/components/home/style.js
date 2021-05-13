@@ -73,6 +73,8 @@ export const TitleContainer = styled.div`
     margin-bottom: 50px;
     @media only screen and (max-width: 800px) {
         margin-top: 30%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 `;
 

@@ -19,18 +19,23 @@ export const Container = styled.div`
     position: fixed;
     z-index: 1300;
     inset: 0px;
+    -webkit-backface-visibility: hidden;
 `;
 
 export const SidebarContainer = styled.div`
     background: white;
     width: 250px;
     position: absolute;
+    -webkit-backface-visibility: hidden;
     height: 100%;
     right: 0;
     top: 0;
     text-align: center;
     padding: 40px;
     animation: ${boxFade} 0.5s;
+    @media only screen and (max-width: 800px) {
+        width: 70%;
+    }
     & > a {
         color: black;
     }

@@ -47,10 +47,12 @@ function Sidebar(props) {
                 </Link>
 
                 <S.Divider />
-                <S.ItemBox>
-                    <BsPeopleFill />
-                    <S.ItemMenu>About Us</S.ItemMenu>
-                </S.ItemBox>
+                <Link to="/about">
+                    <S.ItemBox>
+                        <BsPeopleFill />
+                        <S.ItemMenu>About Us</S.ItemMenu>
+                    </S.ItemBox>
+                </Link>
             </S.SidebarContainer>
         </S.Container >
 

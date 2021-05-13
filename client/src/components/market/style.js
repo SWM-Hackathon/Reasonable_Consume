@@ -14,7 +14,7 @@ export const Banner = styled.div`
     top: 0px;
 `;
 
-export const PriceContainer = styled.div`
+export const MainContainer = styled.div`
     position: relative;
     width: 1000px;
     margin: 0 auto;
@@ -22,19 +22,49 @@ export const PriceContainer = styled.div`
     padding-bottom: 100px;
     z-index: 2;
     top: 0;
+    @media only screen and (max-width: 1000px) {
+        width: 100vw;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+`;
+
+export const TabContainer = styled.ul`
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #010101;
+    list-style-type: none;
+`
+
+export const Tab = styled.li`
+    height: 35px;
+    cursor: pointer;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: height 0.3s ease-out;
+`;
+
+export const PriceContainer = styled.div`
+    width: 100%;
+    height: 100%;
 `;
     
 export const PriceQueryContainer = styled.div`
     background-color: white;
     width: 100%;
-    ${(props) => props.active ? css`
-        height: 500px;
-        transition: height 0.5s ease-out;
-    `: css`
-        transition: height 0.5s ease-out 0.3s;
-    `}
     padding: 50px;
+    padding-top: 80px;
     border: 1px solid #ccc;
+    border-top: none;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100vw;
+    }
 `;
 
 export const PriceListContainer = styled.div`
@@ -46,10 +76,13 @@ export const PriceListContainer = styled.div`
     justify-content: space-evenly;
     border: 1px solid #ccc;
     border-top: none;
+    @media only screen and (max-width: 1000px){
+        padding: 50px 10vw 0px 10vw;
+    }
 `;
 
 export const Title = styled.div`
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
@@ -68,6 +101,9 @@ export const SearchContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    @media only screen and (max-width: 1000px){
+        height: 100px;
+    }
 `;
 
 export const SearchBar = styled.div`
@@ -76,21 +112,25 @@ export const SearchBar = styled.div`
     height: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
+    @media only screen and (max-width: 1000px){
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 `;
 
 export const SearchField = styled.input`
-  width: 100%;
-  height: 3em;
-  background: whitesmoke;
-  border: none;
-  font-size: 12pt;
-  color: #63717f;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  outline: none;
-  border: 1px solid #ccc;
+    width: 100%;
+    height: 3em;
+    background: whitesmoke;
+    border: none;
+    font-size: 12pt;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
 `;
 
 export const SearchUl = styled.ul`
@@ -100,6 +140,10 @@ export const SearchUl = styled.ul`
     width: 640px;
     z-index: 4;
     left: 40px;
+    @media only screen and (max-width: 1000px){
+        width: 80%;
+        left: 30px;
+    }
 `;
 
 export const SearchLi = styled.li`
@@ -115,17 +159,14 @@ export const FruitContainer = styled.tbody`
     border: 1px solid #ccc;
     background-color: white;
     margin: 0px 0px 50px 0px;
-
-    ${(props) => props.active ? css`
-        opacity: 1;
-        transition: opacity 0.5s ease-out 0.3s;
-    `: css`
-        opacity: 0;
-        transition: opacity 0.5s ease-out 0s;
-    `}
+    
+    @media only screen and (max-width: 1000px){
+        width: 80vw;
+    }
 `;
 
 export const FruitIconHolder = styled.td`
+    width: 100px;
     border-right: 1px solid #ccc;
 `;
 
@@ -154,6 +195,9 @@ export const FruitName = styled.td`
     width: 200px;
     vertical-align: top;
     padding: 15px 10px 0px 20px;
+    @media only screen and (max-width: 1000px){
+        width: calc(80vw - 200px);
+    }
 `;
 
 export const FruitBar = styled.span`
@@ -189,43 +233,40 @@ export const FruitEtc = styled.td`
     color: #666666;
 `;
 
+export const PriceMapContainer = styled.div`
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-top: none;
 
-
-export const IconBox = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
-    & > svg {
-        font-size: 4em;
-        color: #909090;
-    }
-    @media only screen and (max-width: 800px) {
-        & > svg {
-            display: none;
-        }
-        margin-top : 20px;
+    @media only screen and (max-width: 1000px) {
+        width: 100vw;
+        height: 500px
     }
 `;
 
-export const IconItem = styled.div`
+export const Plus = styled.div`
+    font-align: center;
     display: flex;
-    flex-direction: column;
-    width: 150px;
-    height: 150px;
     align-items: center;
-    border: 3px solid #909090;
-    border-radius: 50%;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 15px;
+    font-weight: 100;
+    color: slategrey;
     & > svg {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
+        color : red;
     }
-    @media only screen and (max-width: 800px) {
-        width: 120px;
-        height: 120px;
-        margin: 5px;
+`
+export const Minus = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 100;
+    color: slategrey;
+    & > svg {
+        color : blue;
     }
-`;
+`
