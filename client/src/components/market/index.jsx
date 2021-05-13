@@ -12,7 +12,7 @@ const offset = {
 function Intro() {
     return (
         <S.PricePage>
-            <S.Banner />
+            {/* <S.Banner /> */}
             <Price />
         </S.PricePage>
     );
