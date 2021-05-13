@@ -16,8 +16,7 @@
 
 ## ✨ 공개 주소
 
-배포 URL : https://project-wcdoz.run.goorm.io<br>
-데모 영상 : 
+배포 URL : [https://project-wcdoz.run.goorm.io](https://project-wcdoz.run.goorm.io)
 
 ## 💸 '착한 소비'는 어떤 서비스인가요?
 - 소비자들이 쉽게 원하는 착한가격업소를 찾을 수 있고,
