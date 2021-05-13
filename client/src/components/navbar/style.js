@@ -10,6 +10,9 @@ export const NavBarWrapper = styled.div`
   width: 100%;
   border-bottom: 1px solid #e2e2e2;
   background: #eceeef;
+  z-index: 3;
+  left: 0;
+  height: 80px;
 `;
 
 export const Title = styled.div`
