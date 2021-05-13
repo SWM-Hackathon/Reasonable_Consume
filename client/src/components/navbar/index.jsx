@@ -8,7 +8,7 @@ function NavBar(props) {
   return (
     <S.NavBarWrapper>
       <Link to="/">
-        <S.Title>착한 소마</S.Title>
+        <S.Title>착한 소비</S.Title>
       </Link>
       <S.MenuWrapper onClick={toggleHandler}>
         {!toggle && <BsTextRight />}
