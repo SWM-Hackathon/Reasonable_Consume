@@ -45,7 +45,7 @@
 	├── 📁priceRouter
 	├── 📁storeRouter
 	├── 📁userRouter
-    └── index
+    	└── index
 ```
 
   </div>
