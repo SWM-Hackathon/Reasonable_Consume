@@ -1,22 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BsTextRight } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 import * as S from './style';
-import { URLS } from '../../lib/constants/urls';
 
-const Links = [
-  { name: 'HOME', path: URLS.HOME },
-  { name: 'ABOUT', path: URLS.ABOUT },
-];
-
-function NavBar() {
+function NavBar(props) {
+  const { toggle, toggleHandler } = props
   return (
     <S.NavBarWrapper>
-      <S.Title>Title</S.Title>
-      <S.MenuWrapper>
-        {Links.map(({ name, path }) => (
-          <S.MenuItem exact href={path} key={name}>
-            {name}
-          </S.MenuItem>
-        ))}
+      <Link to="/">
+        <S.Title>착한 소마</S.Title>
+      </Link>
+      <S.MenuWrapper onClick={toggleHandler}>
+        {!toggle && <BsTextRight />}
       </S.MenuWrapper>
     </S.NavBarWrapper>
   );
