@@ -1,14 +1,17 @@
 const express = require('express')
 const router = express.Router()
 
-const usersRouter = require('./userRouter/index')
+// Use body-parser
+router.use(express.json());
 
+// Import Router End Point
+const storeRouter = require('./storeRouter')
+const priceRouter = require('./priceRouter')
+const usersRouter = require('./userRouter')
+
+// Routing end-point
+router.use('/store', storeRouter)
+router.use('/price', priceRouter)
 router.use('/users', usersRouter)
-
-router.get(
-  '/test', (req,res,next) =>{
-    res.send('hihi')
-  }
-)
 
 module.exports = router
