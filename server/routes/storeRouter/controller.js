@@ -9,3 +9,13 @@ exports.getStoreAll = async (req, res, next) => {
       next(error);
   }
 }
+
+exports.getStoreDetail = async (req, res, next) => {
+    try {
+        const detail = data['DATA'][req.body.id]
+        res.send(detail)
+    }
+    catch(error){
+        next(error);
+    }
+}
