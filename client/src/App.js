@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import PricePage from './pages/PricePage';
 import IntroPage from './pages/IntroPage';
+import MarketPage from './pages/MarketPage';
 import NavBar from './components/navbar';
 import Sidebar from './components/sidebar'
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/intro" component={IntroPage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/price" component={PricePage} />
+        <Route path="/market/:marketCode" component={MarketPage} />
       </Switch>
       {toggle && <Sidebar toggle={toggle} toggleHandler={toggleHandler}/>}
     </div>
