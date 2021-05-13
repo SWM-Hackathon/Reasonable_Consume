@@ -24,6 +24,7 @@ export const MainContainer = styled.div`
     top: 0;
     @media only screen and (max-width: 1000px) {
         width: 100vw;
+        overflow: hidden;
         padding-bottom: 0;
     }
 `;
@@ -262,6 +263,20 @@ export const FruitEtc = styled.td`
     padding: 0px 10px 10px 20px;
     height: 20px;
     color: #666666;
+`;
+
+export const PriceMapContainer = styled.div`
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-top: none;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100vw;
+        height: 500px
+    }
 `;
 
 export const Img = styled.img.attrs({
