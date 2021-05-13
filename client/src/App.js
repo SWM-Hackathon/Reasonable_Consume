@@ -25,7 +25,7 @@ function App() {
         <Route path="/shop" component={ShopPage} />
         <Route path="/price" component={PricePage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/market/:marketCode" component={MarketPage} />
+        <Route path="/market/350000" exact component={MarketPage} />
       </Switch>
       {toggle && <Sidebar toggle={toggle} toggleHandler={toggleHandler}/>}
     </div>
