@@ -25,7 +25,7 @@ export const BoldContent = styled.span`
     font-weight: bold;
 `;
 
-export const TempDiv = styled.div``
+export const TempDiv = styled.span``
 
 export const TeamContent = styled.div`
     font-size: 1.3em;
@@ -45,6 +45,12 @@ export const Content = styled.div`
     line-height: 30px;
     display: flex;
     align-items: center;
+`;
+export const TempContent = styled.div`
+    font-size: 1.3em;
+    color: #a2a0a0;
+    margin-top: 5px;
+    line-height: 30px;
 `;
 export const RepoContent = styled.div`
     font-size: 1.3em;
@@ -94,3 +100,7 @@ export const IconItem = styled.div`
         margin: 5px;
     }
 `;
+
+export const TeamName = styled.span`
+    color: #6e849a
+`

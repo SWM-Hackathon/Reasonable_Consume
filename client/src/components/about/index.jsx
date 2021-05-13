@@ -13,13 +13,13 @@ function Intro() {
                 <S.Content>
                     안녕하세요!<br/>
                 </S.Content>
-                <S.Content>
+                <S.TempContent>
                     <S.TempDiv>저희는 소비자들의 착한 소비를 돕는 &nbsp;</S.TempDiv>
                     <S.BoldContent>
                         우리 소비가 착해졌어요&nbsp;
                     </S.BoldContent>
-                    <S.TempDiv>팀입니다.<br/></S.TempDiv>
-                </S.Content>
+                    팀입니다.<br/>
+                </S.TempContent>
                 <S.Content>
                     착한 소비를 위해 착한업소, 착한가격에 대한 모든 것을 알려드립니다!<br/>
                 </S.Content>
@@ -35,27 +35,45 @@ function Intro() {
                 </S.Title>
                 <S.TeamContent>
                     <BsPersonFill/>
-                    &nbsp;고동현&nbsp;<a href="https://github.com/godonghyun">(@godonghyun)</a>
+                    <S.TeamName>
+                        &nbsp;고동현&nbsp;
+                    </S.TeamName>
+                    <a href="https://github.com/godonghyun">(@godonghyun)</a>
                 </S.TeamContent>
                 <S.TeamContent>
                     <BsPersonFill/>
-                    &nbsp;김동현&nbsp;<a href="https://github.com/dooking">(@dooking)</a>
+                    <S.TeamName>
+                        &nbsp;김동현&nbsp;
+                    </S.TeamName>
+                    <a href="https://github.com/dooking">(@dooking)</a>
                 </S.TeamContent>
                 <S.TeamContent>
                     <BsPersonFill/>
-                    &nbsp;김장영&nbsp;<a href="https://github.com/longshiine">(@longshiine)</a>
+                    <S.TeamName>
+                        &nbsp;김장영&nbsp;
+                    </S.TeamName>
+                    <a href="https://github.com/longshiine">(@longshiine)</a>
                 </S.TeamContent>
                 <S.TeamContent>
                     <BsPersonFill/>
-                    &nbsp;성인규&nbsp;<a href="https://github.com/cakenbake">(@cakenbake)</a>
+                    <S.TeamName>
+                        &nbsp;성인규&nbsp;
+                    </S.TeamName>
+                    <a href="https://github.com/cakenbake">(@cakenbake)</a>
                 </S.TeamContent>
                 <S.TeamContent>
                     <BsPersonFill/>
-                    &nbsp;이중훈&nbsp;<a href="https://github.com/DoubleHoon">(@DoubleHoon)</a>
+                    <S.TeamName>
+                        &nbsp;이중훈&nbsp;
+                    </S.TeamName>
+                    <a href="https://github.com/DoubleHoon">(@DoubleHoon)</a>
                 </S.TeamContent>
                 <S.TeamContent>
                     <BsPersonFill/>
-                    &nbsp;허승우&nbsp;<a href="https://github.com/1214sw">(@1214sw)</a>
+                    <S.TeamName>
+                        &nbsp;허승우&nbsp;
+                    </S.TeamName>
+                    <a href="https://github.com/1214sw">(@1214sw)</a>
                 </S.TeamContent>
 
 

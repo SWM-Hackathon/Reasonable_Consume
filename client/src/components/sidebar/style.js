@@ -31,6 +31,9 @@ export const SidebarContainer = styled.div`
     text-align: center;
     padding: 40px;
     animation: ${boxFade} 0.5s;
+    @media only screen and (max-width: 800px) {
+        width: 70%;
+    }
     & > a {
         color: black;
     }
