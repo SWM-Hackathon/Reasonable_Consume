@@ -151,28 +151,32 @@ class Shop extends Component {
 						<div style={{ marginLeft: '15px', marginRight: '15px', lineHeight: '2em' }}>
 							<h2>자랑거리</h2>
 							<h3>
-								{this.state.DATA[this.state.now].sh_pride
-									.split('\n')
-									.map((line) => (
-										<span>
-											▷ {line}
-											<br />
-										</span>
-									))}
+								{this.state.DATA[this.state.now].sh_pride === null
+									? ''
+									: this.state.DATA[this.state.now].sh_pride
+											.split('\n')
+											.map((line) => (
+												<span>
+													▷ {line}
+													<br />
+												</span>
+											))}
 							</h3>
 						</div>
 						<br />
 						<br />
 						<div style={{ marginLeft: '15px', marginRight: '15px', lineHeight: '2em' }}>
 							<h3>
-								{this.state.DATA[this.state.now].sh_info
-									.split('\n\n')
-									.map((line) => (
-										<span>
-											{line}
-											<br />
-										</span>
-									))}
+								{this.state.DATA[this.state.now].sh_info === null
+									? ''
+									: this.state.DATA[this.state.now].sh_info
+											.split('\n\n')
+											.map((line) => (
+												<span>
+													{line}
+													<br />
+												</span>
+											))}
 							</h3>
 						</div>
 						<div style={{ marginLeft: '15px', marginRight: '15px' }}>
@@ -182,17 +186,32 @@ class Shop extends Component {
 								전화번호
 								<br />
 							</h2>
-							<h3>☏ {this.state.DATA[this.state.now].sh_phone}</h3>
+							<h3>
+								☏{' '}
+								{this.state.DATA[this.state.now].sh_phone === null
+									? ''
+									: this.state.DATA[this.state.now].sh_phone}
+							</h3>
 							<br />
 							<h2>
 								좌석 수<br />
 							</h2>
-							<h3>☞ {this.state.DATA[this.state.now].seat_num}</h3>
+							<h3>
+								☞{' '}
+								{this.state.DATA[this.state.now].seat_num === null
+									? ''
+									: this.state.DATA[this.state.now].seat_num}
+							</h3>
 							<br />
 							<h2>
 								찾아오시는 길<br />
 							</h2>
-							<h3>☞ {this.state.DATA[this.state.now].sh_way}</h3>
+							<h3>
+								☞{' '}
+								{this.state.DATA[this.state.now].sh_way === null
+									? ''
+									: this.state.DATA[this.state.now].sh_way}
+							</h3>
 							<br />
 						</div>
 					</S.ShopDetails>
