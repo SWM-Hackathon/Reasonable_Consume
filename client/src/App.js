@@ -18,6 +18,7 @@ function App() {
   return (
     <div id="container">
       <GlobalStyle />
+      {toggle && <Sidebar toggle={toggle} toggleHandler={toggleHandler}/>}
       <NavBar toggle={toggle} toggleHandler={toggleHandler}/>
       <Switch>
         <Route path="/" exact component={HomePage} />
@@ -27,7 +28,6 @@ function App() {
         <Route path="/about" component={AboutPage} />
         <Route path="/market/350000" exact component={MarketPage} />
       </Switch>
-      {toggle && <Sidebar toggle={toggle} toggleHandler={toggleHandler}/>}
     </div>
   );
 }
@@ -54,6 +54,9 @@ const GlobalStyle = createGlobalStyle`
   #root, #container {
     width: 100%;
     height: 100%;
+  }
+  #container {
+    positon : relative;
   }
 `;
 
