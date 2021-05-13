@@ -16,7 +16,7 @@
 
 ## ✨ 공개 주소
 
-배포 URL : https://reasonableconsume.run.goorm.io<br>
+배포 URL : https://project-wcdoz.run.goorm.io<br>
 데모 영상 : 
 
 ## 💸 '착한 소비'는 어떤 서비스인가요?
