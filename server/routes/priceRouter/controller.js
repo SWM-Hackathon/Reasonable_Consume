@@ -1,7 +1,7 @@
 const GU_DATA = require('./data/json/GU_DATA.json')
 const MARKET_DATA = require('./data/json/MARKET_DATA.json')
 const PRICE_DATA = require('./data/json/PRICE_DATA.json')
-const AVERAGE_DATA = require('./data/preprocess/json/AVERAGE_DATA.json')
+const AVERAGE_DATA = require('./data/json/AVERAGE_DATA.json')
 
 exports.getGuCode = async (req, res, next) => {
   try {
