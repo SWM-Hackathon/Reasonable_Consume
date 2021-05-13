@@ -14,7 +14,7 @@ export const Banner = styled.div`
     top: 0px;
 `;
 
-export const PriceContainer = styled.div`
+export const MainContainer = styled.div`
     position: relative;
     width: 1000px;
     margin: 0 auto;
@@ -22,6 +22,42 @@ export const PriceContainer = styled.div`
     padding-bottom: 100px;
     z-index: 2;
     top: 0;
+`;
+
+export const TabContainer = styled.ul`
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #010101;
+    list-style-type: none;
+`
+
+export const Tab = styled.li`
+    height: 35px;
+    cursor: pointer;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: height 0.3s ease-out;
+    ${(props) => (
+        props.active ? css`
+            background-color: white;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            height: 38px;
+        `: css`
+            background-color: #ccc;
+            border: 1px solid #ccc;
+        `
+    )}
+`;
+
+export const PriceContainer = styled.div`
+    width: 100%;
+    height: 100%;
 `;
     
 export const PriceQueryContainer = styled.div`
@@ -36,6 +72,7 @@ export const PriceQueryContainer = styled.div`
     `}
     padding: 50px;
     border: 1px solid #ccc;
+    border-top: none;
 `;
 
 export const PriceListContainer = styled.div`

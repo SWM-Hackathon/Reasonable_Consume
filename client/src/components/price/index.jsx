@@ -13,12 +13,24 @@ const offset = {
 // }
 
 function Intro() {
-    
+    const [activeTab, setActiveTab] = useState(0);
+
+    const hanldleClick = e => {
+        setActiveTab(e.target.value);
+    }
 
     return (
         <S.PricePage>
             <S.Banner />
-            <Price />
+            <S.MainContainer>
+                <S.TabContainer>
+                    <S.Tab active={activeTab === 0} value={0} onClick={hanldleClick}>착한 물가</S.Tab>
+                    <S.Tab active={activeTab === 1} value={1} onClick={hanldleClick}>시장 물가</S.Tab>
+                </S.TabContainer>
+                {
+                    activeTab===0?<Price />:null
+                }
+            </S.MainContainer>
         </S.PricePage>
     );
 }
