@@ -1,8 +1,11 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
+const Controller = require("./controller");
 
-const TestController = require("./controller");
+/* GET all store informations */
+router.get('/all', Controller.getStoreAll);
 
-router.get("/", TestController.test);
+/* GET one store informations by index */
+router.get('/detail', Controller.getStoreDetail);
 
 module.exports = router;
