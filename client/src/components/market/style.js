@@ -101,7 +101,6 @@ export const Title = styled.div`
     margin-bottom: 20px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
-    font-weight: bold;
     text-align: center;
 `;
 
@@ -236,7 +235,6 @@ export const FruitBar = styled.span`
 
 export const FruitPrice = styled.td`
     font-size: 1em;
-    font-weight: bold;
     width: 100px;
     color: #454545;
     padding: 12px 10px 0px 10px;
