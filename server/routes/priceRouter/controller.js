@@ -2,6 +2,7 @@ const GU_DATA = require('./data/json/GU_DATA.json')
 const MARKET_DATA = require('./data/json/MARKET_DATA.json')
 const PRICE_DATA = require('./data/json/PRICE_DATA.json')
 const AVERAGE_DATA = require('./data/json/AVERAGE_DATA.json')
+const GONG_DATA = require('./data/gongData')
 
 exports.getGuCode = async (req, res, next) => {
   try {
@@ -17,6 +18,15 @@ exports.getMarket = async (req, res, next) => {
   try {
       const items = MARKET_DATA['DATA']
       res.send(items)
+  }
+  catch(error){
+      next(error);
+  }
+}
+
+exports.getMarketByCode = async (req, res, next) => {
+  try {
+      res.send(GONG_DATA)
   }
   catch(error){
       next(error);

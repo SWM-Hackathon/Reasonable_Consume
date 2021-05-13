@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsBucket, BsBarChart, BsCheck, BsFillStarFill, BsMusicNoteBeamed } from "react-icons/bs";
+import { BsBucket, BsBarChart, BsCheck, BsPeopleFill, BsMusicNoteBeamed } from "react-icons/bs";
 import { AiOutlineQuestion, AiFillStar } from "react-icons/ai";
 import { RiStore2Line, RiLineChartFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
@@ -43,9 +43,9 @@ function Home() {
 				<Link to="/about">
 					<S.MenuItem>
 						<S.MenuIcon>
-							<BsMusicNoteBeamed />
+							<BsPeopleFill />
 						</S.MenuIcon>
-						<S.MenuTitle>간단한 기능?</S.MenuTitle>
+						<S.MenuTitle>About Us</S.MenuTitle>
 					</S.MenuItem>
 				</Link>
 			</S.MenuCard>

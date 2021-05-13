@@ -1,5 +1,10 @@
 import styled, { keyframes } from 'styled-components';
 
+export const Title = styled.div`
+    font-size: 1.5em;
+    color: gray;
+`
+
 const boxFade =  keyframes `
     from {
         right:-250px

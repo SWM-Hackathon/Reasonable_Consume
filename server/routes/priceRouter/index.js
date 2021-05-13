@@ -9,6 +9,7 @@ const Controller = require("./controller");
 
 router.get('/guCode', Controller.getGuCode);
 router.get('/market', Controller.getMarket);
+router.get('/market/350000', Controller.getMarketByCode);
 
 /* Price 관련 API. 
  - /all = 모든 시장/마트의 가격 정보를 리턴합니다.
