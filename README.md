@@ -41,13 +41,7 @@
 │   └── www 
 ├── 📁stylesheets
 ├── 📁utils
-│   ├── 📁auth
-│   ├── 📁comment
-│   ├── 📁issue 
-│   ├── 📁label 
-│   ├── 📁milestone
-│   ├── 📁upload 
-│   └── 📁user
+│   └── constant
 └── 📁routes
 	├── 📁priceRouter
 	├── 📁storeRouter
