@@ -171,6 +171,7 @@ export const FruitPrice = styled.td`
     width: 100px;
     color: #454545;
     padding: 12px 10px 0px 10px;
+
 `
 
 export const FruitUnit = styled.td`
@@ -229,3 +230,27 @@ export const IconItem = styled.div`
         margin: 5px;
     }
 `;
+
+export const Plus = styled.div`
+    font-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 100;
+    color: slategrey;
+    & > svg {
+        color : red;
+    }
+`
+export const Minus = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 100;
+    color: slategrey;
+    & > svg {
+        color : blue;
+    }
+`
