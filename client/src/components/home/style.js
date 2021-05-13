@@ -78,7 +78,7 @@ export const TitleContainer = styled.div`
     }
 `;
 
-export const TitleDiv = styled.span`
+export const TitleDiv = styled.div`
     color: #232323;
     font-size: 3em;
     margin-top: 10px;
