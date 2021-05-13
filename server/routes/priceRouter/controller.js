@@ -45,8 +45,14 @@ exports.getPriceAverage = async (req, res, next) => {
 
 exports.getPriceByGu = async (req, res, next) => {
   try {
-    const items = []
-    res.send(items)
+    const items = PRICE_DATA['DATA']
+    const guCode = req.params.guCode
+    const data = items.filter((item) => {
+      if(item.gu_code == guCode){
+        return item
+      }
+    })
+    res.send(data)
   }
   catch(error){
       next(error);
