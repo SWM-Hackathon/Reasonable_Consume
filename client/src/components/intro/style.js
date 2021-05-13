@@ -27,6 +27,7 @@ export const IconBox = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
+    padding-bottom: 50px;
     & > svg {
         font-size: 4em;
         color: #909090;
@@ -36,6 +37,7 @@ export const IconBox = styled.div`
             display: none;
         }
         margin-top : 20px;
+        margin-bottom: 50px;
     }
 `;
 
