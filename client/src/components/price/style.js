@@ -263,3 +263,11 @@ export const FruitEtc = styled.td`
     height: 20px;
     color: #666666;
 `;
+
+export const Img = styled.img.attrs({
+    src: "/images/pic-map.gif",
+    useMap: "#Map"
+})`
+    width:400px;
+    height:360px;
+`
