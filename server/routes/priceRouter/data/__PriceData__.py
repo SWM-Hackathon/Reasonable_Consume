@@ -25,6 +25,10 @@ def namePreprocess(name):
         return '돼지고기'
     if str(name).find('배추') != -1:
         return '배추'
+    if str(name).find('호박') != -1:
+        return '호박'
+    if str(name).find('애호박') != -1:
+        return '애호박'
     if str(name).find('오이') != -1:
         return '오이'
     if str(name).find('오징어') != -1:
