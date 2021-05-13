@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiTwotoneHome } from "react-icons/ai";
-import { BsBucket, BsBarChart, BsPersonFill } from "react-icons/bs";
+import { BsBucket, BsBarChart, BsPersonFill, BsPeopleFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import * as S from './style'
 
@@ -10,7 +10,9 @@ function Sidebar(props) {
         <S.Container>
             <S.OutSide onClick={toggleHandler} />
             <S.SidebarContainer>
-                SideBar
+                <S.Title>
+                    착한 소비
+                </S.Title>
                 <Link to="/">
                     <S.ItemBox onClick={toggleHandler}>
                         <AiTwotoneHome />
@@ -46,8 +48,8 @@ function Sidebar(props) {
 
                 <S.Divider />
                 <S.ItemBox>
-                    <BsPersonFill />
-                    <S.ItemMenu>About</S.ItemMenu>
+                    <BsPeopleFill />
+                    <S.ItemMenu>About Us</S.ItemMenu>
                 </S.ItemBox>
             </S.SidebarContainer>
         </S.Container >
