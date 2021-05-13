@@ -19,12 +19,14 @@ export const Container = styled.div`
     position: fixed;
     z-index: 1300;
     inset: 0px;
+    -webkit-backface-visibility: hidden;
 `;
 
 export const SidebarContainer = styled.div`
     background: white;
     width: 250px;
     position: absolute;
+    -webkit-backface-visibility: hidden;
     height: 100%;
     right: 0;
     top: 0;
