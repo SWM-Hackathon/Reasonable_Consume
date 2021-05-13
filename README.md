@@ -76,7 +76,7 @@
 ### 메인 화면
 ![image](https://user-images.githubusercontent.com/82928126/118184013-c6896b00-b475-11eb-8dea-5ce5a0465f59.png)
 ### 네비게이션
-![image](https://user-images.githubusercontent.com/82928126/118185310-5a0f6b80-b477-11eb-8d7a-c442480e3712.png)
+![image](https://user-images.githubusercontent.com/82928126/118188003-b88a1900-b47a-11eb-99d9-b79f5182e8f9.png)
 ### 착한 소비란?
 ![image](https://user-images.githubusercontent.com/82928126/118185454-83c89280-b477-11eb-8e98-71de194d2147.png)
 ### About Us
