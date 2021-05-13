@@ -80,109 +80,109 @@ def makePriceData():
         sijang_result = requests.get("https://tearstop.seoul.go.kr/mulga/inc/marketList_ajax.jsp?m_gu_code={}&type_code=001".format(item['gu_code'])).json()
         mart_result = requests.get("https://tearstop.seoul.go.kr/mulga/inc/marketList_ajax.jsp?m_gu_code={}&type_code=002".format(item['gu_code'])).json()
 
-    for r in sijang_result['row']:
-      # 엑셀파일 크롤링
-        m_seq = r['codeValue']
-        url = "https://tearstop.seoul.go.kr/mulga/info/price01_excel.jsp?m_seq={}&m_yyyymm=202105".format(m_seq)
-        res = urlopen(url).read()
+        for r in sijang_result['row']:
+          # 엑셀파일 크롤링
+            m_seq = r['codeValue']
+            url = "https://tearstop.seoul.go.kr/mulga/info/price01_excel.jsp?m_seq={}&m_yyyymm=202105".format(m_seq)
+            res = urlopen(url).read()
 
-        # HTML Parsing
-        bs = BeautifulSoup(res, 'html.parser')
-        tag = bs.select("tr td span")
-        
-        # MARKET_DATA
-        Market_data= {
-            "m_seq": m_seq,
-            "gu_code": item['gu_code'],
-            "market_name": r['codeName'],
-            "items": []
-        }
+            # HTML Parsing
+            bs = BeautifulSoup(res, 'html.parser')
+            tag = bs.select("tr td span")
 
-        product = {
-          "name": '',
-          "unit": '',
-          "price": 0,
-          "etc": ''
-        }
-        count = 1
-        for t in tag:
-            cnt = count % 4
-            if cnt == 1:
-                product['name'] = namePreprocess(t.contents[0])
-            elif cnt == 2:
-                product['unit'] = unitPreprocess(t.contents[0])
-            elif cnt == 3:
-                product['price'] = int(str(t.contents[0]).replace(',', ''))
-            else:
-                try:
-                    product['etc'] = t.contents[0]
-                except:
-                    product['etc'] = ''
-                Market_data['items'].append(product)
-                product = {
-                    "name": '',
-                    "unit": '',
-                    "price": 0,
-                    "etc": ''
-                }
-            
-            if cnt != 4:
-                count += 1
-            else:
-                count = 1
-        data.append(Market_data)
-    
+            # MARKET_DATA
+            Market_data= {
+                "m_seq": m_seq,
+                "gu_code": item['gu_code'],
+                "market_name": r['codeName'],
+                "items": []
+            }
 
-    for r in mart_result['row']:
-        # 엑셀파일 크롤링
-        m_seq = r['codeValue']
-        url = "https://tearstop.seoul.go.kr/mulga/info/price01_excel.jsp?m_seq={}&m_yyyymm=202105".format(m_seq)
-        res = urlopen(url).read()
+            product = {
+              "name": '',
+              "unit": '',
+              "price": 0,
+              "etc": ''
+            }
+            count = 1
+            for t in tag:
+                cnt = count % 4
+                if cnt == 1:
+                    product['name'] = namePreprocess(t.contents[0])
+                elif cnt == 2:
+                    product['unit'] = unitPreprocess(t.contents[0])
+                elif cnt == 3:
+                    product['price'] = int(str(t.contents[0]).replace(',', ''))
+                else:
+                    try:
+                        product['etc'] = t.contents[0]
+                    except:
+                        product['etc'] = ''
+                    Market_data['items'].append(product)
+                    product = {
+                        "name": '',
+                        "unit": '',
+                        "price": 0,
+                        "etc": ''
+                    }
 
-        # HTML Parsing
-        bs = BeautifulSoup(res, 'html.parser')
-        tag = bs.select("tr td span")
+                if cnt != 4:
+                    count += 1
+                else:
+                    count = 1
+            data.append(Market_data)
 
-        # MARKET_DATA
-        Market_data= {
-            "m_seq": m_seq,
-            "gu_code": item['gu_code'],
-            "market_name": r['codeName'],
-            "items": []
-        }
 
-        product = {
-            "name": '',
-            "unit": '',
-            "price": 0,
-            "etc": ''
-        }
-        count = 1
-        for t in tag:
-            cnt = count % 4
-            if cnt == 1:
-                product['name'] = namePreprocess(t.contents[0])
-            elif cnt == 2:
-                product['unit'] = unitPreprocess(t.contents[0])
-            elif cnt == 3:
-                product['price'] = int(str(t.contents[0]).replace(',', ''))
-            else:
-                try:
-                    product['etc'] = t.contents[0]
-                except:
-                    product['etc'] = ''
-                Market_data['items'].append(product)
-                product = {
-                    "name": '',
-                    "unit": '',
-                    "price": 0,
-                    "etc": ''
-                }
+        for r in mart_result['row']:
+            # 엑셀파일 크롤링
+            m_seq = r['codeValue']
+            url = "https://tearstop.seoul.go.kr/mulga/info/price01_excel.jsp?m_seq={}&m_yyyymm=202105".format(m_seq)
+            res = urlopen(url).read()
 
-            if cnt != 4:
-                count += 1
-            else:
-                count = 1
+            # HTML Parsing
+            bs = BeautifulSoup(res, 'html.parser')
+            tag = bs.select("tr td span")
+
+            # MARKET_DATA
+            Market_data= {
+                "m_seq": m_seq,
+                "gu_code": item['gu_code'],
+                "market_name": r['codeName'],
+                "items": []
+            }
+
+            product = {
+                "name": '',
+                "unit": '',
+                "price": 0,
+                "etc": ''
+            }
+            count = 1
+            for t in tag:
+                cnt = count % 4
+                if cnt == 1:
+                    product['name'] = namePreprocess(t.contents[0])
+                elif cnt == 2:
+                    product['unit'] = unitPreprocess(t.contents[0])
+                elif cnt == 3:
+                    product['price'] = int(str(t.contents[0]).replace(',', ''))
+                else:
+                    try:
+                        product['etc'] = t.contents[0]
+                    except:
+                        product['etc'] = ''
+                    Market_data['items'].append(product)
+                    product = {
+                        "name": '',
+                        "unit": '',
+                        "price": 0,
+                        "etc": ''
+                    }
+
+                if cnt != 4:
+                    count += 1
+                else:
+                    count = 1
         data.append(Market_data)
 
     PRICE_DATA = dict()
