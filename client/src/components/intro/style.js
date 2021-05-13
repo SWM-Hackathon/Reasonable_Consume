@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const IntroContainer = styled.div`
     padding-top: 100px;
+    padding: 100px 20px 0px 20px;
 `;
 
 export const TitleContainer = styled.div`
