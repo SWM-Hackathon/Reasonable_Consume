@@ -1,4 +1,5 @@
 const GU_DATA = require('./data/preprocess/json/GU_DATA.json')
+const MARKET_DATA = require('./data/preprocess/json/MARKET_DATA.json')
 
 exports.getGuCode = async (req, res, next) => {
   try {
@@ -12,7 +13,7 @@ exports.getGuCode = async (req, res, next) => {
 
 exports.getMarket = async (req, res, next) => {
   try {
-      const items = []
+      const items = MARKET_DATA['DATA']
       res.send(items)
   }
   catch(error){
