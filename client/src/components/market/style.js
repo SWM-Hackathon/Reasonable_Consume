@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const PricePage = styled.div`
     background-color: smokeshite;
-    padding-top: 80px;
 `;
 
 export const Banner = styled.div`   
@@ -25,6 +24,7 @@ export const MainContainer = styled.div`
     top: 0;
     @media only screen and (max-width: 1000px) {
         width: 100vw;
+        overflow: hidden;
         padding-bottom: 0;
     }
 `;
@@ -47,17 +47,6 @@ export const Tab = styled.li`
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     transition: height 0.3s ease-out;
-    ${(props) => (
-        props.active ? css`
-            background-color: white;
-            border: 1px solid #ccc;
-            border-bottom: none;
-            height: 38px;
-        `: css`
-            background-color: #ccc;
-            border: 1px solid #ccc;
-        `
-    )}
 `;
 
 export const PriceContainer = styled.div`
@@ -68,12 +57,8 @@ export const PriceContainer = styled.div`
 export const PriceQueryContainer = styled.div`
     background-color: white;
     width: 100%;
-    ${(props) => props.active ? css`
-        height: 150px;
-    `: css`
-        height: 150px;
-    `}
     padding: 50px;
+    padding-top: 80px;
     border: 1px solid #ccc;
     border-top: none;
 
@@ -101,7 +86,6 @@ export const Title = styled.div`
     margin-bottom: 20px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
-    text-align: center;
 `;
 
 export const Content = styled.div`
@@ -175,14 +159,6 @@ export const FruitContainer = styled.tbody`
     border: 1px solid #ccc;
     background-color: white;
     margin: 0px 0px 50px 0px;
-
-    ${(props) => props.active ? css`
-        opacity: 1;
-        transition: opacity 0.5s ease-out 0.3s;
-    `: css`
-        opacity: 0;
-        transition: opacity 0.5s ease-out 0s;
-    `}
     
     @media only screen and (max-width: 1000px){
         width: 80vw;
@@ -235,6 +211,7 @@ export const FruitBar = styled.span`
 
 export const FruitPrice = styled.td`
     font-size: 1em;
+    font-weight: bold;
     width: 100px;
     color: #454545;
     padding: 12px 10px 0px 10px;
@@ -256,6 +233,19 @@ export const FruitEtc = styled.td`
     color: #666666;
 `;
 
+export const PriceMapContainer = styled.div`
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-top: none;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100vw;
+        height: 500px
+    }
+`;
 
 export const Plus = styled.div`
     font-align: center;
