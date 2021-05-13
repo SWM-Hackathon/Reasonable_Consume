@@ -1,6 +1,6 @@
 # 착한 소비: 착한 소비를 도와주는 서비스 💸
 
-<p align="center"><img width="600" alt="logoImage4" src="https://user-images.githubusercontent.com/82928126/118183574-39461680-b475-11eb-8d06-5861e0e83c5e.png"></p>
+<p align="center"><img width="600" alt="logoImage4" src="https://user-images.githubusercontent.com/82928126/118186905-39e0ac00-b479-11eb-80e0-5e522cbdeb29.png"></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/javascript-ES6+-yellow?logo=javascript" />
@@ -79,25 +79,25 @@
 </details>
 
 ## 📷 프로젝트 실행 화면
+### 메인 화면
 ![image](https://user-images.githubusercontent.com/82928126/118184013-c6896b00-b475-11eb-8dea-5ce5a0465f59.png)
-
+### 네비게이션
 ![image](https://user-images.githubusercontent.com/82928126/118185310-5a0f6b80-b477-11eb-8d7a-c442480e3712.png)
-
-
+### 착한 소비란?
 ![image](https://user-images.githubusercontent.com/82928126/118185454-83c89280-b477-11eb-8e98-71de194d2147.png)
-
+### About Us
 ![image](https://user-images.githubusercontent.com/82928126/118185563-a65aab80-b477-11eb-8c98-7ccd0917096a.png)
-
+### 착한 업소 정보 1
 ![image](https://user-images.githubusercontent.com/82928126/118184255-1700c880-b476-11eb-8b90-44caf187d8a0.png)
-
+### 착한 업소 정보 2
 ![image](https://user-images.githubusercontent.com/82928126/118184602-81196d80-b476-11eb-8e73-270d39699ad9.png)
-
+### 착한 물가 1
 ![image](https://user-images.githubusercontent.com/82928126/118184738-ab6b2b00-b476-11eb-873f-7bbaa0f2a496.png)
-
+### 착한 물가 2
 ![image](https://user-images.githubusercontent.com/82928126/118184840-cd64ad80-b476-11eb-9b92-7b04cfc5a393.png)
-
+### 착한 구별 물가 1
 ![image](https://user-images.githubusercontent.com/82928126/118185157-2b919080-b477-11eb-8bcb-0bf3ab3e05cd.png)
-
+### 착한 구별 물가 2
 ![image](https://user-images.githubusercontent.com/82928126/118184935-ed946c80-b476-11eb-8438-93c3b29503e0.png)
 
 ## 👩‍👩‍👧‍👦Members
