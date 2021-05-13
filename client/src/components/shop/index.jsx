@@ -88,7 +88,7 @@ class Shop extends Component {
 								width: '19vw',
 								height: '5vh',
 								textAlign: 'center',
-								fontSize: '4vh',
+								fontSize: '1.5em',
 							}}
 						>
 							<option value="한식">한식</option>
@@ -107,7 +107,14 @@ class Shop extends Component {
 									<button
 										type="button"
 										value={this.state.DATA.indexOf(x)}
-										style={{ height: '100px', fontSize: '3vh' }}
+										style={{
+											height: 'auto',
+											fontSize: '1.2em',
+											paddingTop: '10px',
+											paddingBottom: '10px',
+											boxShadow: 'rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset',
+											borderRadius: '10px 0 10px 0',
+										}}
 										onClick={(e) =>
 											this.changeShopDetails(e, x.latitude, x.longitude)
 										}
@@ -121,13 +128,29 @@ class Shop extends Component {
 					<S.ShopDetails>
 						<div>
 							<br />
-							<h1>{this.state.DATA[this.state.now].sh_name}</h1>
+							<h1
+								style={{
+									textAlign: 'center',
+									textShadow: '5px 5px #dddddd',
+									marginLeft: '15px',
+									marginRight: '15px',
+								}}
+							>
+								{this.state.DATA[this.state.now].sh_name}
+								<br />
+								<br />
+								<img
+									src={this.state.DATA[this.state.now].sh_photo}
+									alt="img"
+									style={{ width: '250px', height: '250px' }}
+								/>
+							</h1>
+							<br />
 							<br />
 						</div>
-						<div>
-							<h2>
-								특이사항
-								<br />
+						<div style={{ marginLeft: '15px', marginRight: '15px', lineHeight: '2em' }}>
+							<h2>자랑거리</h2>
+							<h3>
 								{this.state.DATA[this.state.now].sh_pride
 									.split('\n')
 									.map((line) => (
@@ -136,35 +159,40 @@ class Shop extends Component {
 											<br />
 										</span>
 									))}
-							</h2>
-						</div>{' '}
-						<br />
-						<div>
-							<h3>
-								{this.state.DATA[this.state.now].sh_info.split('\n').map((line) => (
-									<span>
-										{line}
-										<br />
-									</span>
-								))}
 							</h3>
 						</div>
-						<div>
+						<br />
+						<br />
+						<div style={{ marginLeft: '15px', marginRight: '15px', lineHeight: '2em' }}>
+							<h3>
+								{this.state.DATA[this.state.now].sh_info
+									.split('\n\n')
+									.map((line) => (
+										<span>
+											{line}
+											<br />
+										</span>
+									))}
+							</h3>
+						</div>
+						<div style={{ marginLeft: '15px', marginRight: '15px' }}>
 							<h2>
+								<br />
+								<br />
 								전화번호
 								<br />
 							</h2>
-							<h3>▶{this.state.DATA[this.state.now].sh_phone}</h3>
+							<h3>☏ {this.state.DATA[this.state.now].sh_phone}</h3>
 							<br />
 							<h2>
 								좌석 수<br />
 							</h2>
-							<h3>▶{this.state.DATA[this.state.now].seat_num}</h3>
+							<h3>☞ {this.state.DATA[this.state.now].seat_num}</h3>
 							<br />
 							<h2>
 								찾아오시는 길<br />
 							</h2>
-							<h3>▶{this.state.DATA[this.state.now].sh_way}</h3>
+							<h3>☞ {this.state.DATA[this.state.now].sh_way}</h3>
 							<br />
 						</div>
 					</S.ShopDetails>

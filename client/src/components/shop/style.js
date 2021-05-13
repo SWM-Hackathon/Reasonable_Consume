@@ -20,7 +20,7 @@ export const ShopFilter = styled.div`
 	overflowy: auto;
 	@media screen and (max-width: 500px) {
 		flex-direction: column;
-		height: 20vh;
+		height: 10vh;
 	}
 `;
 
@@ -28,11 +28,11 @@ export const ShopDetails = styled.div`
 	display: flex;
 	flex: 1 1 10%;
 	flex-direction: column;
-	background-color: #eaf4f4;
+	background: linear-gradient(45deg, #eceeef, #f2f0e8);
 	width: 20vw;
 	overflow: auto;
 	@media screen and (max-width: 500px) {
-		width: 30vw;
+		width: 20vw;
 		height: 60vh;
 	}
 `;
